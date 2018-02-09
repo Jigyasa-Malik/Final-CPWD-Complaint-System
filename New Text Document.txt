@@ -1,0 +1,126 @@
+<?php
+session_start();     
+include_once 'dbconnect.php'; 
+include_once "header.html";
+?>
+
+!DOCTYPE html>
+<html>
+    <head>
+        <title>Update Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+        <style type="text/css">
+            
+            <?php
+            include("style/w3.css");
+            include("style/StyleSheet1.css");
+            ?>
+        </style>
+        <!--Adding Scripts-->
+        <script>
+            $(document).ready(function () {
+                $("#dob").datepicker({
+                    dateFormat: "yy-mm-dd"
+                });
+               });
+
+             $(document).ready(function() {
+                 $("#date_join").datepicker({
+                     dateFormat: "yy-mm-dd"
+                 });
+               });
+
+             $(document).ready(function() {
+                 $("#date_retire").datepicker({
+                     dateFormat: "yy-mm-dd"
+                 });
+               });
+
+             $(document).ready(function(){
+                $('#im1').click(function(){
+                    $('#fname').prop('disabled',false);
+                });
+            });
+             $(document).ready(function(){
+                $('#im2').click(function(){
+                    $('#lname').prop('disabled',false);
+                });
+            });
+             $(document).ready(function(){
+                $('#im3').click(function(){
+                    $('#gen').prop('disabled',false);
+                });
+            });
+
+            $(document).ready(function(){
+                $('#im4').click(function(){
+                    $('#dob').prop('disabled', false);
+
+                });
+            });
+
+            $(document).ready(function(){
+                $('#im5').click(function(){
+                    $('#desig').prop('disabled',false);
+                });
+            });
+            $(document).ready(function(){
+                $('#im6').click(function(){
+                    $('#org').prop('disabled',false);
+                });
+            });
+            $(document).ready(function(){
+                $('#im7').click(function(){
+                    $('#date_join').prop('disabled',false);
+                });
+            });
+
+            $(document).ready(function(){
+                $('#im8').click(function(){
+                    $('#date_retire').prop('disabled',false);
+                });
+            });
+
+            $(document).ready(function(){
+                $('#im9').click(function(){
+                    $('#hno').prop('disabled',false);
+                });
+            });
+ 
+            $(document).ready(function(){
+                $('#im10').click(function(){
+                    $('#block').prop('disabled',false);
+                });
+            });
+            $(document).ready(function(){
+                $('#im11').click(function(){
+                    $('#area').prop('disabled',false);
+                });
+            });
+            $(document).ready(function(){
+                $('#im12').click(function(){
+                    $('#city').prop('disabled',false);
+                });
+            });
+            $(document).ready(function(){
+                $('#im13').click(function(){
+                    $('#pin').prop('disabled',false);
+                });
+            });
+
+            $(document).ready(function(){
+                $('#im14').click(function(){
+                    $('#contact').prop('disabled',false);
+                });
+            });
+        </script>
+    </head>
+  </html>
+
+  
